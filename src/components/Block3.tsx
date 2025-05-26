@@ -1,18 +1,34 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import Image from 'next/image'
+import { Button } from './ui/button'
 
 export default function Block3() {
 	return (
-		<Card className='bg-gray-100'>
-			<CardHeader>
-				<CardTitle className='text-center'>Мы работаем с брендами</CardTitle>
-			</CardHeader>
-			<CardContent>
-				<div className='flex justify-center space-x-4'>
-					<div className='w-16 h-8 bg-gray-300' />
-					<div className='w-16 h-8 bg-gray-300' />
-					<div className='w-16 h-8 bg-gray-300' />
+		<section className="bg-[#f5f3ff] py-16">
+			<div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+				{/* Text content */}
+				<div className="md:w-1/2 text-left">
+					<h2 className="text-3xl font-bold mb-4">
+						Профессиональный ремонт вашей техники
+					</h2>
+					<p className="text-gray-700 text-base mb-6 max-w-md">
+						Надежный ремонт телефонов, планшетов, телевизоров, ноутбуков и компьютеров в{' '}
+						<span className="font-medium">"Давай сделаем"</span>.
+					</p>
+					<Button className="bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)] text-white px-6 py-2 text-base rounded-lg">
+						Получить консультацию
+					</Button>
 				</div>
-			</CardContent>
-		</Card>
+
+				{/* Image */}
+				<div className="md:w-1/2 relative h-[350px] w-full">
+					<Image
+						src="/img/c4f8c381-9c8e-4b25-9cce-818d7f5282ba.png"
+						alt="Мастер чинит телефон"
+						fill
+						className="object-cover rounded-xl shadow-lg"
+					/>
+				</div>
+			</div>
+		</section>
 	)
 }
