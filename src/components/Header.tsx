@@ -17,7 +17,7 @@ export default function Header() {
 						+375 (25) 990-58-88
 					</div>
 				</div>
-				<Button variant='default' className='bg-blue-500'>
+				<Button variant='default' className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)]' size={'lg'}>
 					Оставить заявку
 					<ArrowRight className='ml-2' />
 				</Button>
