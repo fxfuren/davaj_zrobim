@@ -18,7 +18,7 @@ export default function Block1() {
 				</div>
 
 				{/* Text section */}
-				<div className='w-full lg:w-1/2 max-w-xl text-left pl-20'>
+				<div className='w-full lg:w-1/2 max-w-xl text-left sm:pl-20'>
 					<h2 className='text-4xl font-bold leading-tight mb-4'>
 						Профессиональный ремонт вашей техники
 					</h2>
