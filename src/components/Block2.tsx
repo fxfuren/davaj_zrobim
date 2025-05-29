@@ -35,10 +35,10 @@ export default function Block2() {
 	]
 
 	return (
-		<Card className='max-w-4xl mx-auto text-center !border-none mt-15 mb-15'>
+		<Card className='max-w-4xl mx-auto text-center !border-none sm:mt-30 sm:mb-30'>
 			<CardHeader>
-				<CardTitle className='text-4xl font-bold'>Наши Услуги</CardTitle>
-				<CardDescription className='text-2xl mb-5'>
+				<CardTitle className='text-3xl font-bold'>Наши Услуги</CardTitle>
+				<CardDescription className='text-1xl mb-5'>
 					Профессиональный ремонт электронной техники в кратчайшие сроки.
 				</CardDescription>
 			</CardHeader>
@@ -47,7 +47,7 @@ export default function Block2() {
 					{services.map((service, index) => (
 						<li
 							key={index}
-							className='flex justify-between items-center py-3 text-left text-sm sm:text-2xl'
+							className='flex justify-between items-center text-left text-[18px] py-6'
 						>
 							<span>{service.title}</span>
 							<span className='font-semibold text-blue-600 whitespace-nowrap'>
