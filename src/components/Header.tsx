@@ -1,13 +1,19 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+	Sheet,
+	SheetContent,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger,
+} from '@/components/ui/sheet'
 import { ArrowRight, Menu } from 'lucide-react'
 
 export default function Header() {
 	return (
 		<header className='flex justify-between items-center w-full p-4 bg-black text-white shadow-md'>
-			<h1 className='text-2xl pl-5 font-bold'>"Давай сделаем"</h1>
+			<h1 className='text-2xl pl-5 font-bold'>&quot;Давай сделаем&quot;</h1>
 
 			{/* Десктопная версия */}
 			<div className='hidden md:flex items-center gap-4'>
@@ -41,9 +47,14 @@ export default function Header() {
 					</SheetTrigger>
 					<SheetContent
 						side='right'
-						className='w-[280px] sm:w-[300px] bg-black text-white'
+						className='w-[280px] sm:w-[300px] bg-black text-white border-0'
 					>
-						<div className='mt-10 px-4 space-y-6'>
+						<SheetHeader>
+							<SheetTitle className='text-white'>
+								&quot;Давай сделаем&quot;
+							</SheetTitle>
+						</SheetHeader>
+						<div className='px-4 space-y-3'>
 							<div className='text-sm text-gray-400'>
 								Служба приема и диагностики
 								<br />

@@ -13,8 +13,21 @@ export default function Block5() {
 				>
 					davay_sdelaem@mail.ru
 				</a>
-				<p className='text-sm mb-1'>г. Заславль ул.Набережная-1 к.305</p>
+				<p className='text-sm mb-1'>г. Заславль, ул. Набережная-1 к.305</p>
 				<p className='text-sm'>ПН-выходной, С 11:00 до 20:00</p>
+			</div>
+
+			{/* Встроенная Яндекс.Карта */}
+			<div className='w-full h-[500px]'>
+				<iframe
+					src='https://yandex.com/map-widget/v1/?ll=27.289156%2C54.004218&mode=whatshere&whatshere%5Bpoint%5D=27.288842%2C54.004189&whatshere%5Bzoom%5D=17&z=19.83'
+					width='100%'
+					height='100%'
+					frameBorder='0'
+					allowFullScreen
+					style={{ position: 'relative', border: 0 }}
+					title='Карта - Давай сделаем'
+				></iframe>
 			</div>
 		</div>
 	)
