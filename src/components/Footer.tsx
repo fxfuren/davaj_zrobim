@@ -1,4 +1,4 @@
-import { FaTelegramPlane, FaTwitter, FaVk, FaWhatsapp } from 'react-icons/fa'
+import { FaTelegramPlane, FaVk } from 'react-icons/fa'
 
 export default function Footer() {
 	return (
@@ -24,7 +24,7 @@ export default function Footer() {
 				<div className='flex flex-col items-center md:items-end gap-2'>
 					<div className='flex gap-4'>
 						<a
-							href='#'
+							href='https://t.me/Davay_sdelaem_Zaslavl'
 							className='bg-white p-2 rounded-full shadow text-indigo-600 hover:scale-105 transition'
 						>
 							<FaTelegramPlane size={18} />
@@ -33,27 +33,7 @@ export default function Footer() {
 							href='#'
 							className='bg-white p-2 rounded-full shadow text-indigo-600 hover:scale-105 transition'
 						>
-							<FaWhatsapp size={18} />
-						</a>
-						<a
-							href='#'
-							className='bg-white p-2 rounded-full shadow text-indigo-600 hover:scale-105 transition'
-						>
-							<FaTwitter size={18} />
-						</a>
-						<a
-							href='#'
-							className='bg-white p-2 rounded-full shadow text-indigo-600 hover:scale-105 transition'
-						>
 							<FaVk size={18} />
-						</a>
-					</div>
-					<div className='flex gap-4 text-sm'>
-						<a href='#' className='hover:underline'>
-							О компании
-						</a>
-						<a href='#' className='hover:underline'>
-							Новости
 						</a>
 					</div>
 				</div>
