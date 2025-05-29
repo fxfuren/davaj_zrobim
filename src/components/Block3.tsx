@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Button } from './ui/button'
+import ContactButton from './ContactButton'
 
 export default function Block3() {
 	return (
@@ -15,9 +15,9 @@ export default function Block3() {
 						компьютеров в{' '}
 						<span className='font-medium'>&quot;Давай сделаем&quot;</span>.
 					</p>
-					<Button className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)] text-white px-6 py-2 text-base rounded-lg'>
+					<ContactButton className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)] text-white px-6 py-2 text-base rounded-lg'>
 						Получить консультацию
-					</Button>
+					</ContactButton>
 				</div>
 
 				{/* Image */}

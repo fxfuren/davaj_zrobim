@@ -1,6 +1,5 @@
-import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import { Button } from './ui/button'
+import ContactButton from './ContactButton'
 
 export default function Block1() {
 	return (
@@ -25,13 +24,9 @@ export default function Block1() {
 					<p className='text-gray-700 text-lg mb-6'>
 						Надежный ремонт телефонов, планшетов и ноутбуков
 					</p>
-					<Button
-						variant='default'
-						size='lg'
-						className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)]'
-					>
-						Связаться с нами <ArrowRight className='ml-2' />
-					</Button>
+					<ContactButton className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)]'>
+						Связаться с нами
+					</ContactButton>
 					<p className='text-sm text-gray-500 mt-4'>
 						Гарантия качества и быстрые сроки восстановления
 					</p>

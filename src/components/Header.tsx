@@ -8,7 +8,8 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet'
-import { ArrowRight, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
+import ContactButton from './ContactButton'
 
 export default function Header() {
 	return (
@@ -27,14 +28,9 @@ export default function Header() {
 						+375 (25) 990-58-88
 					</div>
 				</div>
-				<Button
-					variant='default'
-					className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)]'
-					size='lg'
-				>
+				<ContactButton className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)] ml-2'>
 					Оставить заявку
-					<ArrowRight className='ml-2' />
-				</Button>
+				</ContactButton>
 			</div>
 
 			{/* Мобильная версия */}
@@ -61,13 +57,9 @@ export default function Header() {
 								ПН-выходной С11:00 до 20:00
 							</div>
 							<div className='text-lg font-bold'>+375 (25) 990-58-88</div>
-							<Button
-								variant='default'
-								className='w-full bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)]'
-							>
+							<ContactButton className='bg-[rgb(85,82,232)] hover:bg-[rgb(65,62,200)]'>
 								Оставить заявку
-								<ArrowRight className='ml-2' />
-							</Button>
+							</ContactButton>
 						</div>
 					</SheetContent>
 				</Sheet>
