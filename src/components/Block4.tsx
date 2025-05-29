@@ -25,7 +25,7 @@ const features = [
 
 export default function Block4() {
 	return (
-		<section className='py-20 bg-white text-center'>
+		<section className='py-64 bg-white text-center'>
 			<div className='container mx-auto px-6'>
 				<p className='text-indigo-600 font-medium mb-2'>
 					Преимущества работы с нами

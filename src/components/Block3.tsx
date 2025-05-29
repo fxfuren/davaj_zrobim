@@ -3,7 +3,7 @@ import ContactButton from './ContactButton'
 
 export default function Block3() {
 	return (
-		<section className='bg-[#f5f3ff] py-16'>
+		<section className='bg-[#f5f3ff] py-24'>
 			<div className='container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12'>
 				{/* Text content */}
 				<div className='md:w-1/2 text-left'>
@@ -21,13 +21,15 @@ export default function Block3() {
 				</div>
 
 				{/* Image */}
-				<div className='md:w-1/2 relative h-[350px] w-full'>
-					<Image
-						src='/img/703aa66d-94bd-42f8-96aa-050d4cf8143b.webp'
-						alt='Мастер чинит телефон'
-						fill
-						className='object-cover rounded-xl shadow-lg'
-					/>
+				<div className='md:w-1/2'>
+					<div className='aspect-[4/3] relative w-full min-h-[250px]'>
+						<Image
+							src='/img/703aa66d-94bd-42f8-96aa-050d4cf8143b.webp'
+							alt='Мастер чинит телефон'
+							fill
+							className='rounded-xl shadow-lg object-cover'
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
