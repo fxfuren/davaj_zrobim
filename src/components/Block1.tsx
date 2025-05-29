@@ -3,21 +3,22 @@ import ContactButton from './ContactButton'
 
 export default function Block1() {
 	return (
-		<section className='bg-gray-50 py-12'>
-			<div className='container mx-auto flex flex-col lg:flex-row items-center gap-10 px-6'>
-				{/* Image section */}
-				<div className='relative w-full lg:w-1/2 h-[400px]'>
-					<Image
-						src='/img/e5302e7e-b58f-4225-964b-fd31d32db460.jpg'
-						alt='Открытый ноутбук и инструменты'
-						fill
-						sizes='100vw'
-						className='object-cover rounded-xl shadow'
-					/>
-				</div>
+		<section className='flex flex-col lg:flex-row w-full min-h-[600px]'>
+			{/* Left side: Image */}
+			<div className='relative w-full lg:w-1/2 min-h-[400px] lg:min-h-full'>
+				<Image
+					src='/img/e5302e7e-b58f-4225-964b-fd31d32db460.jpg'
+					alt='Открытый ноутбук и инструменты'
+					fill
+					sizes='(min-width: 1024px) 50vw, 100vw'
+					className='object-cover'
+					priority
+				/>
+			</div>
 
-				{/* Text section */}
-				<div className='w-full lg:w-1/2 max-w-xl text-left sm:pl-20'>
+			{/* Right side: Text */}
+			<div className='w-full lg:w-1/2 bg-gray-50 flex items-center px-6 lg:px-20 py-12'>
+				<div className='max-w-xl'>
 					<h2 className='text-4xl font-bold leading-tight mb-4'>
 						Профессиональный ремонт вашей техники
 					</h2>
