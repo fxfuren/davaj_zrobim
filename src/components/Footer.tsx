@@ -1,4 +1,4 @@
-import { FaTelegramPlane, FaVk } from 'react-icons/fa'
+import { FaInstagram, FaTelegramPlane } from 'react-icons/fa'
 
 export default function Footer() {
 	return (
@@ -30,10 +30,10 @@ export default function Footer() {
 							<FaTelegramPlane size={18} />
 						</a>
 						<a
-							href='#'
+							href='https://www.instagram.com/davaysdelaem/'
 							className='bg-white p-2 rounded-full shadow text-indigo-600 hover:scale-105 transition'
 						>
-							<FaVk size={18} />
+							<FaInstagram size={18} />
 						</a>
 					</div>
 				</div>

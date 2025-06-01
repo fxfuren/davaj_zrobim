@@ -14,7 +14,31 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: 'Давай сделаем',
-	description: 'Надежный ремонт телефонов, планшетов и ноутбуков',
+	description:
+		'Надежный ремонт телефонов, планшетов и ноутбуков в Минске с гарантией',
+	icons: {
+		icon: '/img/logo.jpg',
+	},
+	openGraph: {
+		title: 'Давай сделаем – Ремонт электроники',
+		description:
+			'Профессиональный ремонт смартфонов, ноутбуков и планшетов в Минске',
+		url: 'https://давай-сделаем.бел',
+		siteName: 'Давай сделаем',
+		images: [
+			{
+				url: '/img/logo.jpg',
+				width: 1200,
+				height: 630,
+				alt: 'Мастерская ремонта',
+			},
+		],
+		locale: 'ru_RU',
+		type: 'website',
+	},
+	alternates: {
+		canonical: 'https://давай-сделаем.бел',
+	},
 }
 
 export default function RootLayout({
@@ -23,7 +47,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='ru'>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
