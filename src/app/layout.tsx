@@ -74,6 +74,10 @@ export default function RootLayout({
 		<html lang='ru'>
 			<Head>
 				<meta name='yandex-verification' content='80af4c02ce371e06' />
+				<meta
+					name='google-site-verification'
+					content='ksREfCKWpkEARwo0HDi2d--sAKoaM0KmAaVMCi0EaoE'
+				/>
 			</Head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
