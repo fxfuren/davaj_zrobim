@@ -18,7 +18,7 @@ export default function Footer() {
 						+375 (25) 990-58-88
 					</p>
 					<p className='text-base text-indigo-600'>davay_sdelaem@mail.ru</p>
-					<p className='text-base text-black font-medium'>УНП 2444102</p>
+					<p className='text-base text-black font-medium'>УНП KB2444102</p>
 					<p className='text-base text-black font-medium'>
 						Город Заславль Набережная-1 Каб.305
 					</p>
