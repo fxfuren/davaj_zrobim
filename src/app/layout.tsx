@@ -15,16 +15,17 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-	title: 'Давай сделаем',
+	title: 'Давай сделаем – Ремонт телефонов Заславль, Минск',
 	description:
-		'Надежный ремонт телефонов, планшетов и ноутбуков в Заславле с гарантией',
+		'Надёжный ремонт телефонов, планшетов и ноутбуков в Заславле и Минске с гарантией',
 	keywords: [
+		'Ремонт телефонов Заславль',
+		'Ремонт телефонов Минск',
 		'Ремонт цифровой техники',
-		'Ремонт смартфонов в Заславле',
 		'Сервисный центр по ремонту ноутбуков',
-		'Замена экрана телефона',
+		'Замена экрана телефона Заславль',
 		'Восстановление данных с жесткого диска',
-		'Ремонт планшетов недорого',
+		'Ремонт планшетов в Минске недорого',
 		'Услуги по ремонту компьютеров',
 		'Срочный ремонт электроники',
 		'Ремонт зарядных устройств',
@@ -44,9 +45,9 @@ export const metadata: Metadata = {
 		icon: '/img/logo.jpg',
 	},
 	openGraph: {
-		title: 'Давай сделаем – Ремонт электроники',
+		title: 'Давай сделаем – Ремонт телефонов в Заславле и Минске',
 		description:
-			'Профессиональный ремонт смартфонов, ноутбуков и планшетов в Заславле',
+			'Профессиональный ремонт смартфонов, ноутбуков и планшетов в Заславле и Минске',
 		url: 'https://давай-сделаем.бел',
 		siteName: 'Давай сделаем',
 		images: [
@@ -82,27 +83,41 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
+				<Script
+					id='google-analytics'
+					strategy='afterInteractive'
+					src='https://www.googletagmanager.com/gtag/js?id=G-EBW6EZ0PCS'
+				/>
+				<Script id='gtag-init' strategy='afterInteractive'>
+					{`
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-EBW6EZ0PCS');
+	`}
+				</Script>
+
 				<Script id='yandex-metrika' strategy='afterInteractive'>
 					{`
-						(function(m,e,t,r,i,k,a){
-							m[i]=m[i]||function(){
-								(m[i].a=m[i].a||[]).push(arguments)
-							};
-							m[i].l=1*new Date();
-							for (var j = 0; j < document.scripts.length; j++) {
-								if (document.scripts[j].src === r) { return; }
-							}
-							k=e.createElement(t),a=e.getElementsByTagName(t)[0],
-							k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-						})
-						(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		(function(m,e,t,r,i,k,a){
+			m[i]=m[i]||function(){
+				(m[i].a=m[i].a||[]).push(arguments)
+			};
+			m[i].l=1*new Date();
+			for (var j = 0; j < document.scripts.length; j++) {
+				if (document.scripts[j].src === r) { return; }
+			}
+			k=e.createElement(t),a=e.getElementsByTagName(t)[0],
+			k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+		})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-						ym(102320198, "init", {
-							clickmap:true,
-							trackLinks:true,
-							accurateTrackBounce:true
-						});
-					`}
+		ym(102320198, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		});
+	`}
 				</Script>
 
 				<noscript>
