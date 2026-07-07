@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Yandex Ads (РСЯ)
+
+Добавьте переменную окружения с id рекламного блока РСЯ:
+
+```bash
+NEXT_PUBLIC_YANDEX_RTB_BLOCK_ID=R-A-XXXXXXXX-X
+```
+
+Код загрузчика РСЯ подключён один раз в `src/app/layout.tsx`, а сам рекламный блок рендерится на главной странице через `src/components/YandexAdBlock.tsx`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
