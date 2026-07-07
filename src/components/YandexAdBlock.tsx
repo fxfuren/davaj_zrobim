@@ -19,8 +19,8 @@ export default function YandexAdBlock() {
 					window.yaContextCb = window.yaContextCb || [];
 					window.yaContextCb.push(() => {
 						Ya.Context.AdvManager.render({
-							blockId: "${yandexRtbBlockId}",
-							renderTo: "${renderTo}"
+							blockId: ${JSON.stringify(yandexRtbBlockId)},
+							renderTo: ${JSON.stringify(renderTo)},
 						});
 					});
 				`}
