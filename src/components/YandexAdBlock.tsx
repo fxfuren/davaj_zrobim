@@ -1,5 +1,3 @@
-'use client'
-
 import Script from 'next/script'
 
 const yandexRtbBlockId = process.env.NEXT_PUBLIC_YANDEX_RTB_BLOCK_ID
