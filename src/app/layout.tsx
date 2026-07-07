@@ -119,6 +119,16 @@ export default function RootLayout({
 		});
 	`}
 				</Script>
+				<Script id='rsya-loader-init' strategy='afterInteractive'>
+					{`
+		window.yaContextCb = window.yaContextCb || [];
+	`}
+				</Script>
+				<Script
+					id='rsya-loader'
+					strategy='afterInteractive'
+					src='https://yandex.ru/ads/system/context.js'
+				/>
 
 				<noscript>
 					<div>
