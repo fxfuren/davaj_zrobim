@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import Head from 'next/head'
 import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://давай-сделаем.бел'),
 	title: 'Давай сделаем – Ремонт телефонов Заславль, Минск',
 	description:
 		'Надёжный ремонт телефонов, планшетов и ноутбуков в Заславле и Минске с гарантией',
@@ -53,6 +53,12 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://давай-сделаем.бел',
 	},
+	verification: {
+		google: 'ksREfCKWpkEARwo0HDi2d--sAKoaM0KmAaVMCi0EaoE',
+		other: {
+			'yandex-verification': '80af4c02ce371e06',
+		},
+	},
 }
 
 export default function RootLayout({
@@ -62,16 +68,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='ru'>
-			<Head>
-				<meta name='yandex-verification' content='80af4c02ce371e06' />
-				<meta
-					name='google-site-verification'
-					content='ksREfCKWpkEARwo0HDi2d--sAKoaM0KmAaVMCi0EaoE'
-				/>
-			</Head>
-			<body
-				className='antialiased'
-			>
+			<body className='antialiased'>
 				<Script
 					id='google-analytics'
 					strategy='afterInteractive'
