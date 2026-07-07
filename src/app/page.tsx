@@ -5,6 +5,7 @@ import Block4 from '@/components/Block4'
 import Block5 from '@/components/Block5'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import RsyaAd from '@/components/RsyaAd'
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 			<div className='flex flex-col gap-0 w-full'>
 				<Block1 />
 				<Block2 />
+				<RsyaAd />
 				<Block3 />
 				<Block4 />
 				<Block5 />
