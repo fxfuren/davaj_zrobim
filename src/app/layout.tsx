@@ -119,14 +119,18 @@ export default function RootLayout({
 		});
 	`}
 				</Script>
-				<Script id='yandex-ads-init' strategy='beforeInteractive'>
-					{`window.yaContextCb = window.yaContextCb || [];`}
-				</Script>
-				<Script
-					id='yandex-ads-loader'
-					strategy='beforeInteractive'
-					src='https://yandex.ru/ads/system/context.js'
-				/>
+				{process.env.NEXT_PUBLIC_YANDEX_RTB_BLOCK_ID ? (
+					<>
+						<Script id='yandex-ads-init' strategy='beforeInteractive'>
+							{`window.yaContextCb = window.yaContextCb || [];`}
+						</Script>
+						<Script
+							id='yandex-ads-loader'
+							strategy='beforeInteractive'
+							src='https://yandex.ru/ads/system/context.js'
+						/>
+					</>
+				) : null}
 
 				<noscript>
 					<div>
